@@ -1,3 +1,8 @@
+"""
+Brute force
+"""
+
+
 def simplify_text(vocab: set, words: list) -> str:
     ans = []
     for w in words:
@@ -10,6 +15,7 @@ def simplify_text(vocab: set, words: list) -> str:
     return " ".join(ans)
 
 
-v = set(input().split())
-w = input().split()
-print(simplify_text(v, w))
+if __name__ == '__main__':
+    v = set(input().split())
+    w = input().split()
+    print(simplify_text(v, w))

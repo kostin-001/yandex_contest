@@ -6,6 +6,7 @@ def get_majority(lst: list) -> int:
     return cnt.most_common(1)[0][0]
 
 
-n = int(input())
-nums = list(map(int, input().split()))
-print(get_majority(nums))
+if __name__ == '__main__':
+    n = int(input())
+    nums = list(map(int, input().split()))
+    print(get_majority(nums))
